@@ -10,7 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dishes: DISHES
+      dishes: DISHES,
+      selectedDish: Menu.selectedDish
     };
   }
 
@@ -24,7 +25,7 @@ class App extends Component {
         </Navbar>
 
         <Menu dishes={this.state.dishes} />
-        
+
       </div>
     );
   }
